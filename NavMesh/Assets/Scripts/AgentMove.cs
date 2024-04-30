@@ -7,9 +7,10 @@ public class AgentMove : MonoBehaviour
 {
        public Transform goal;
 
-       void Start () {
+    void Start () {
           NavMeshAgent agent = GetComponent<NavMeshAgent>();
           agent.destination = goal.position; 
     }
+    
 }
 
