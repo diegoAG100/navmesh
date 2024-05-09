@@ -15,4 +15,8 @@ public class AgentePerseguidor : MonoBehaviour
     void Update(){
         agent.SetDestination(goal.position);
     }
+
+    public void StopFollow(){
+        agent.ResetPath();
+    }
 }
